@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hello</title>
+
+    <style>
+        body
+        {
+            background-image: url(https://i.stack.imgur.com/vhoa0.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            text-align: center;
+            color: aliceblue;
+            padding-top: 50px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 16px;
+        
+        }
+
+        #hello 
+        {
+            background-color: red;
+            font-size: 14px;
+            color: aliceblue;
+            border-radius: 10px;
+            padding: 10px;
+            border: none;
+        }
+
+        #inputname
+        {
+            background-color: black;
+            color: aliceblue;
+            border-radius: 10px;
+            text-align: center;
+            border: none;
+
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+<form action="hello" method="post">
+
+    <p> Enter Your Good Name </p> 
+    <input type="text" name="inputname" id="inputname" placeholder="Enter"><br><br>
+
+    <input type="submit" value="SUBMIT" id="hello"><br>
+
+	{% for message in get_flashed_messages()%}
+	<p> {{message}} </p>
+	{% endfor %}
+
+</form>
+
+</body>
+</html>
