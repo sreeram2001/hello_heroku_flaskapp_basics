@@ -11,7 +11,6 @@ backcall==0.1.0
 backports.shutil-get-terminal-size==1.0.0
 beautifulsoup4==4.6.3
 bitarray==0.8.3
-bkcharts==0.2
 blaze==0.10.1
 bleach==2.1.4
 bokeh==0.13.0
